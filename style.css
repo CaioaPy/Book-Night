@@ -116,7 +116,7 @@ nav a:hover {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -154,9 +154,6 @@ nav a:hover {
 .BUTAO:hover {
     background: #123456;
 }
-
-
-
 
 .cursos {
     padding: 60px 20px;
