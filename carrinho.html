@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carrinho de Compras</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
-                <h1>Book Night</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
+            <h1>Book Night</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="nacional.html">Livros Nacionais</a></li>
+                <li><a href="internacional.html">Livros Internacionais</a></li>
+                <li><a href="booknight.html">Livros da Editora Book Night</a></li>
+                <li></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a id="cadastroLink" class="palavras" href="cadastro.html">Cadastre-se</a>
+            <a id="loginLink" class="palavras" href="login.html">Login</a>
+            <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
+            <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
+        </div>
+    </header>
+
+    <main id="conteudo" style="padding-top: 30ch; padding-left: 10ch;">
+        <section class="carrinho">
+            <h2>Seu Carrinho de Compras:</h2>
+
+            <div id="listaCarrinho"></div>
+
+            <div class="total">
+                <h3>Total: R$ <span id="total"></span></h3>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="livros.html">Livros</a></li>
-                    <li><a href="nacional.html">Livros Nacionais</a></li>
-                    <li><a href="internacional.html">Livros Internacionais</a></li>
-                    <li><a href="booknight.html">Livros da Editora Book Night</a></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <div class="login">
-                <a id="cadastroLink" class="palavras" href="cadastro.html">Cadastre-se</a>
-                <a id="loginLink" class="palavras" href="login.html">Login</a>
-                <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
-                <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
-            </div>            
-        </header>
 
-        <main id="conteudo" style="padding-top: 30ch; padding-left: 10ch;">
-            <section class="carrinho">
-                <h2>Seu Carrinho de Compras:</h2>
+            <form action="" method="POST">
+                <button type="button" class="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+            </form>
+            <br class="espaço">
+            <hr id="linhazinha">
+            <br>
+        </section>
+    </main>
 
-                <div id="listaCarrinho"></div>
+    <script src="scriptbotoes.js"></script>
+    <script src="carrinho.js"></script>
+</body>
 
-                <div class="total">
-                    <h3>Total: R$ <span id="total"></span></h3>
-                </div>
-
-                <form action="" method="POST">
-                    <button type="button" class="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
-                </form>
-                <br class="espaço">
-                <hr id="linhazinha">
-                <br>
-            </section>
-        </main>
-
-        <script src="scriptbotoes.js"></script>
-        <script src="carrinho.js"></script>
-    </body>
 </html>

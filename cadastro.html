@@ -32,26 +32,27 @@
             <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
         </div>
     </header>
+    <main class="cadaslogin">
+        <div class="formulario">
+            <div class="logar">
+                <h2>Cadastro</h2>
+                <form id="formCadastro">
+                    <label for="cpf_cliente">CPF</label>
+                    <input type="text" id="cpf_cliente" name="cpf_cliente" placeholder="Digite o seu CPF" required>
 
-    <div class="formulario">
-        <div class="logar">
-            <h2>Cadastro</h2>
-            <form id="formCadastro">
-                <label for="cpf_cliente">CPF</label>
-                <input type="text" id="cpf_cliente" name="cpf_cliente" placeholder="Digite o seu CPF" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-
-                <button type="submit">Cadastrar</button>
-            </form>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
     <footer>
-        <p>&copy; Skillboost. Site feito por Caio Abner e Davi Miguel</p>
+        <p>&copy; Book Night. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
 
     <script src="cadastro.js"></script>
